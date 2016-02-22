@@ -1,0 +1,103 @@
+/**
+ *  this is the inside site PAGES stylesheet.
+ *  It must be used for style relevant for the content of pages : home content, article content, any other type of content that are not in specific stylesheet.
+ *  Juste Keep it clear !
+ */
+
+/*  ========================================================================
+    FIRST SECTION
+    ======================================================================== */
+.mainPage {
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    
+    
+    h1 {
+        position: absolute;
+        top: 40%;
+        display: block;
+        width: 100%;
+
+        font: 900 65px "Open Sans", "Helvetica Neue", Arial, sans-serif;
+        color: #c0392b;
+        text-align: center;
+        text-transform: uppercase;
+
+        text-shadow: 1px 1px 0px #e74c3c;
+
+        transform: translateY(-50%);
+    }
+
+    h3 {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 100%;
+
+        font: italic 400 24px "Times New Roman";
+        color: #d35400;
+        text-align: center;
+        letter-spacing: 3px;
+
+        transform: translateY(-50%);
+    }
+
+    .line {
+        position: absolute;
+        top: 46%;
+
+        width: 100%;
+        height: 1px;
+        
+
+        
+
+        &::after {
+            content: '';
+            position: relative;
+            display: block;
+            width: 25%;
+            height: 1px;
+            margin: 0 auto;
+            background: rgba(255,255,255,.4);
+
+            animation: line_effect 2s ease-in-out 1s;           
+            box-shadow: 0px 0px 10px 1px #FFFF00;
+        }
+    }
+
+    .arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        display: block;
+
+        font-size: 65px;
+        color: rgba(243, 156, 18,.2);
+
+        transform: translateX(-50%);
+        
+        animation: bounce .7s ease-in-out 3.5s infinite;
+        opacity: 0; 
+    }
+}
+
+.mainGrid {
+    width: 100%;
+    height: 100vh;
+    background: #34495e;
+}
+
+@keyframes line_effect {
+    0%   {width: 1px; opacity: 0; border-radius: 50%; transform: scale(100); }
+    25%  {width: 1px; opacity: 1; transform: scale(1);}
+    50%  {border-radius: 5px;}
+    100% {width: 25%; }
+}
+
+@keyframes bounce{
+     from { bottom: 30px;}
+     50%  { opacity: 1; bottom: 60px;}
+     to   { bottom: 30px;}
+}

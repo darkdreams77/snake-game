@@ -1,0 +1,16 @@
+
+.mainHeader {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #34495e;
+
+    padding: 15px;
+    color: #fff;
+
+    transition: background .5s ease-in-out;
+    
+    &.fixed {
+        background: #2c3e50;
+    }
+}

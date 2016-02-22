@@ -1,0 +1,214 @@
+/**
+ *  This is the styleguide stylesheet.
+ *  It's must be used only to define elements taht are present in the designer's styleguide.
+ *  If it's possible, use the MDCSS - based on Markdown syntax to comment your element.
+ *  @border-image-source:  : https://github.com/jonathantneal/mdcss;
+ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 1.2em/1.6em Arial, sans-serif;
+    background-color: #FFF;
+    color: #000;
+}
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+p {
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+hr {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+sup,
+sub {
+    position: relative;
+    height: 0;
+    vertical-align: baseline;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+address {
+    line-height: 2rem;
+}
+
+video {
+    display: block;
+    width: 100%;
+}
+
+time {
+    display: inline-block;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #338fff;
+}
+
+::selection {
+    text-shadow: none;
+    background: #338fff;
+}
+
+/* Chrome outline */
+*:focus {
+    outline: none;
+}
+
+/*  Layout
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.wrapper {}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mainContent {}
+.innerContainer {}
+.innerContent {}
+
+/*  Titles
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.tl1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.tl2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.tl3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Custom Selector usage */
+:--heading {
+    margin-top: 0;
+}
+
+
+/*  Links
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.lk {
+}
+
+/*  Buttons
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.btn1 {
+}
+
+/*  Lists
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.lst1 {
+    margin-bottom: 20px;
+    & > li {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+/*  Various
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.hr1 {
+    height: 1px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+/*  Fix
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.visuallyhidden {
+    position: absolute;
+    left: -9999px;
+    overflow: hidden;
+    margin: -1px !important;
+    padding: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    border: 0 none;
+}
+
+/*
+    Last clearfix version
+    https://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bijoo {
+    visibility: visible !important;
+}
