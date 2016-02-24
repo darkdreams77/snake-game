@@ -16,7 +16,7 @@ require.config({
 
         // Modules
         scrollUp: 'modules/scroll_up',
-        grid: 'modules/grid'
+        snake: 'modules/snake'
     }
 });
 

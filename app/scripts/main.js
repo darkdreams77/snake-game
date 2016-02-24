@@ -9,7 +9,7 @@ define([
     'bootstrap',
 
     //modules
-    'scrollUp', 'grid'
+    'scrollUp', 'snake'
 
 ], function () {
     'use strict';
