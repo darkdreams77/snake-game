@@ -9,6 +9,7 @@
     color: #fff;
 
     transition: background .5s ease-in-out;
+    z-index: 1;
     
     &.fixed {
         background: #2c3e50;
